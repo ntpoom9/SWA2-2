@@ -6,9 +6,9 @@ public class ShapeMainShow {
 		Shape shape;
         
 
-		Square rect = new Square();
-        shape = rect;
-        rect.setValues(50,4);
+		Square squ = new Square();
+        shape = squ;
+        squ.setValues(50,4);
         System.out.println("Area of square : " + shape.getArea());
         
 
