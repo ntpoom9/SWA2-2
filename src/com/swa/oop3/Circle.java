@@ -7,16 +7,11 @@ public class Circle extends Shape {
 	      this.radius = radius;
 	   }
 
-	   //Get height
-	   public double getRadius() 
-	   {
-	       return radius;
-	   }
 	
-	@Override
 	public double getArea() {
-		// TODO Auto-generated method stub
-		  return Math.PI*Math.pow(radius,2);
+		this.area = Math.PI * Math.pow(radius,2);
+		return this.area;
+		
 	}
 
-}
+} 

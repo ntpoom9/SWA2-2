@@ -1,15 +1,15 @@
 package com.swa.oop3;
 
-public class Rectangle extends Shape
+public class Square  extends Shape
 {
 	 private double height;  // To hold height.
-	   private double width;  //To hold width or base
+	   private double base;  //To hold width or base
 
 	   // Set height and width
-	   public void setValues(double height, double width)
+	   public void setValues(double height, double base)
 	   {
 	      this.height = height;
-	      this.width = width;
+	      this.base = base;
 	   }
 
 	   //Get height
@@ -19,9 +19,9 @@ public class Rectangle extends Shape
 	   }
 	     
 	   //Get width
-	   public double getWidth() 
+	   public double getBase() 
 	   {
-	       return width;
+	       return base;
 	   } 
 
 	   // The getArea method is abstract.   
@@ -29,6 +29,7 @@ public class Rectangle extends Shape
     //Calculate and return area of rectangle
     public double getArea()
     {
-        return getHeight() * getWidth();
+    	this.area =getHeight() * getBase();
+        return this.area;
     }
 }
